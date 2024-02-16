@@ -1,14 +1,9 @@
-package projetos_marcito;
-
-
 import java.util.ArrayList;
 import java.util.Scanner;
 
-public class Projetos_marcito {
-
+public class Main {
     public static void main(String[] args) {
         Scanner sc = new Scanner(System.in);
-        
         ArrayList<Double> numeros = new ArrayList<>();
         double opcao;
 
@@ -18,9 +13,8 @@ public class Projetos_marcito {
         double result_divid = 0;
         double result_multip = 0;
 
-        boolean boleia = true;
 
-        while (boleia) {
+        while (true) {
             System.out.print("Digite um numero ou 0 para sair: ");
             opcao = sc.nextDouble();
 
@@ -43,7 +37,7 @@ public class Projetos_marcito {
                         }
 
 
-                        case "menos":
+                    case "menos":
                         for (double numero : numeros) {
                             result_sub += numero;
                             System.out.println("O resultado da subtração do seus numero é de "+result_sub);
@@ -51,7 +45,7 @@ public class Projetos_marcito {
                         }
 
 
-                        case "divide":
+                    case "divide":
                         for (double numero : numeros) {
                             result_divid += numero;
                             System.out.println("O resultado da divisão do seus numero é de "+result_divid);
@@ -59,14 +53,17 @@ public class Projetos_marcito {
                         }
 
 
-                        case "multiplica":
+                    case "multiplica":
                         for (double numero : numeros) {
                             result_multip += numero;
                             System.out.println("O resultado da multiplica do seus numero é de "+result_multip);
                             break;
-                    }
+                        }
                 }
             }
         }
+    }
+}
+
     }
 }
