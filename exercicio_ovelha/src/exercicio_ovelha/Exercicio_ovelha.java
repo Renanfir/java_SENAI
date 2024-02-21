@@ -1,12 +1,20 @@
+
+package exercicio_ovelha;
+
 import java.util.Scanner;
 
-public class Main {
+
+public class Exercicio_ovelha {
+
+    
     public static void main(String[] args) {
+     
         Scanner sc = new Scanner(System.in);
 
         int[][] ovelhas = new int[3][3];
 
         int escolha;
+        int quantidade;
 
         System.out.println("------------");
         System.out.println("|  Ovelhas |");
@@ -21,21 +29,24 @@ public class Main {
             System.out.print("Diga o numero da sua ovelha: ");
             escolha = sc.nextInt();
 
+            System.out.print("Diga a quantidade: ");
+            quantidade = sc.nextInt();
+
             switch (escolha) {
                 case 1 -> {
-                    ovelhas[0][0] += 1;
-                    ovelhas[0][1] += 2000;
-                    ovelhas[0][2] += 120;
+                    ovelhas[0][0] += quantidade;
+                    ovelhas[0][1] += 2000 * ovelhas[0][0];
+                    ovelhas[0][2] += 120 * ovelhas[0][0];
                 }
                 case 2 -> {
-                    ovelhas[1][0] += 1;
-                    ovelhas[1][1] += 2600;
-                    ovelhas[1][2] += 180;
+                    ovelhas[1][0] += quantidade;
+                    ovelhas[1][1] += 2600 * ovelhas[1][0];
+                    ovelhas[1][2] += 180 * ovelhas[1][0];
                 }
                 case 3 -> {
-                    ovelhas[2][0] += 1;
-                    ovelhas[2][1] += 2400;
-                    ovelhas[2][2] += 150;
+                    ovelhas[2][0] += quantidade;
+                    ovelhas[2][1] += 2400 * ovelhas[2][0];
+                    ovelhas[2][2] += 150 * ovelhas[2][0];
                 }
                 case 4 -> bol = false;
             }
