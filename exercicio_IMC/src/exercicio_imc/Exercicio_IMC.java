@@ -8,7 +8,8 @@ public class Exercicio_IMC {
 
     public static void main(String[] args) {
         Scanner sc = new Scanner(System.in);
-        
+
+        //Declaração variáveis
         String nome_pessoa;
         double peso;
         double altura;
@@ -16,9 +17,9 @@ public class Exercicio_IMC {
         boolean continuar = true;
         
         Map<String, String> Dados = new HashMap<>();
-
+        //Loop enquanto o usuário não confirmar a saída
         while (continuar) {
-
+            //Entrada de dados
             System.out.print("Digite seu nome: ");
             nome_pessoa = sc.next();
 
@@ -29,9 +30,11 @@ public class Exercicio_IMC {
             altura = sc.nextFloat();
             altura = altura * 0.01;
 
+            //Calculo IMC
             calculo = peso / (altura * altura);
             calculo = Math.round(calculo);
 
+            //Analise dos dados
             if (calculo <= 18.5) {
                 Dados.put(nome_pessoa, "Abaixo do normal");
 
@@ -50,10 +53,11 @@ public class Exercicio_IMC {
             } else {
                 Dados.put(nome_pessoa, "Obesidade grau 3");
             }
-
+            //Pergunta saida programa
             System.out.print("Você quer continuar? (Digite 's' para sim, 'n' para não): ");
             String resposta = sc.next();
 
+            //Saída dos dados
             if (resposta.equalsIgnoreCase("n")) {
                 for (String key : Dados.keySet()) {
                     String value = Dados.get(key);
