@@ -11,11 +11,12 @@ public class Exercicio_ovelha {
      
         Scanner sc = new Scanner(System.in);
 
+        //Declarando variáveis
         int[][] ovelhas = new int[3][3];
-
         int escolha;
         int quantidade;
 
+        //Tabela escolhas
         System.out.println("------------");
         System.out.println("|  Ovelhas |");
         System.out.println("|1 - BRANCA|");
@@ -25,13 +26,16 @@ public class Exercicio_ovelha {
 
         boolean bol = true;
 
+        //Loop até usuário escolher saida
         while (bol){
+            //Entrada dos dados
             System.out.print("Diga o numero da sua ovelha: ");
             escolha = sc.nextInt();
 
             System.out.print("Diga a quantidade: ");
             quantidade = sc.nextInt();
 
+            //Filtro de ovelhas
             switch (escolha) {
                 case 1 -> {
                     ovelhas[0][0] += quantidade;
@@ -52,6 +56,7 @@ public class Exercicio_ovelha {
             }
 
         }
+        //Saída
         System.out.println();
         System.out.println("Total ovelhas brancas: "+ovelhas[0][0]);
         System.out.println("Preço rebanho branco: "+ovelhas[0][1]);
