@@ -18,15 +18,6 @@ public class Main {
 
         while (continuar) {
 
-            System.out.println("Digite seu sexo(M/F): ");
-            sexo = sc.next().toUpperCase().charAt(0);
-
-            if (sexo != 'M' && sexo != 'F') {
-                System.out.println("Sexo inválido, Digite novamente(M/F): ");
-                sexo = sc.next().toUpperCase().charAt(0);
-
-            } else {
-
                 System.out.print("Digite seu nome: ");
                 nome_pessoa = sc.next();
 
@@ -74,4 +65,3 @@ public class Main {
             }
         }
     }
-}
