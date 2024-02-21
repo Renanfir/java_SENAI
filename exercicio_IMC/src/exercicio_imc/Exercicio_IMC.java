@@ -53,6 +53,7 @@ public class Exercicio_IMC {
             } else {
                 Dados.put(nome_pessoa, "Obesidade grau 3");
             }
+            
             //Pergunta saida programa
             System.out.print("Você quer continuar? (Digite 's' para sim, 'n' para não): ");
             String resposta = sc.next();
