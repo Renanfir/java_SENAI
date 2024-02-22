@@ -1,0 +1,11 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<project version="4">
+  <component name="ProjectModuleManager">
+    <modules>
+      <module fileurl="file://$PROJECT_DIR$/calculadora_array/calculadora_array.iml" filepath="$PROJECT_DIR$/calculadora_array/calculadora_array.iml" />
+      <module fileurl="file://$PROJECT_DIR$/exercicio_IMC/exercicio_IMC.iml" filepath="$PROJECT_DIR$/exercicio_IMC/exercicio_IMC.iml" />
+      <module fileurl="file://$PROJECT_DIR$/exercicio_ovelha/exercicio_ovelha.iml" filepath="$PROJECT_DIR$/exercicio_ovelha/exercicio_ovelha.iml" />
+      <module fileurl="file://$PROJECT_DIR$/.idea/java_SENAI.iml" filepath="$PROJECT_DIR$/.idea/java_SENAI.iml" />
+    </modules>
+  </component>
+</project>
